@@ -1,17 +1,26 @@
-﻿@model IEnumerable<HilbertsHotel.Models.Reservations>
+﻿@model IEnumerable<HilbertsHotel.Models.Reservation>
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Schedule a reservation now!</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+@*<table class="table">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckIn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Checkout)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreditCard)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.FirstName)
         </th>
@@ -24,20 +33,20 @@
         <th>
             @Html.DisplayNameFor(model => model.DateOfBirth)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CheckIn)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CheckOut)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreditCard)
-        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckIn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Checkout)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreditCard)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.FirstName)
         </td>
@@ -51,15 +60,6 @@
             @Html.DisplayFor(modelItem => item.DateOfBirth)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CheckIn)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CheckOut)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreditCard)
-        </td>
-        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
@@ -67,4 +67,4 @@
     </tr>
 }
 
-</table>
+</table>*@

@@ -159,8 +159,13 @@
     <Compile Include="Migrations\201911021955484_reservations.Designer.cs">
       <DependentUpon>201911021955484_reservations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911022341476_reservation2.cs" />
+    <Compile Include="Migrations\201911022341476_reservation2.Designer.cs">
+      <DependentUpon>201911022341476_reservation2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Reservations.cs" />
+    <Compile Include="Models\C__MigrationHistory.cs" />
+    <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -209,6 +214,7 @@
     <Content Include="Views\Reservation\Details.cshtml" />
     <Content Include="Views\Reservation\Edit.cshtml" />
     <Content Include="Views\Reservation\Index.cshtml" />
+    <Content Include="Views\Reservation\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911021955484_reservations.resx">
       <DependentUpon>201911021955484_reservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911022341476_reservation2.resx">
+      <DependentUpon>201911022341476_reservation2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

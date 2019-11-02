@@ -13,6 +13,6 @@ namespace HilbertsHotel
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<Reservations> Reservations { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
     }
 }

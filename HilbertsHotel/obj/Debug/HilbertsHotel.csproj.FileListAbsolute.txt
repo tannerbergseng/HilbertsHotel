@@ -83,5 +83,5 @@ C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.dll
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.pdb
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.useraddID.resources
-C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.csprojAssemblyReference.cache
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.reservations.resources
+C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.reservation2.resources

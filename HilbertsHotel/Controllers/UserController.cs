@@ -19,7 +19,7 @@ namespace HilbertsHotel.Controllers
        
         public ActionResult Details(int? ID)
         {
-            List<Reservations> x = db.Reservations.ToList();
+            List<Reservation> x = db.Reservations.ToList();
             return View(x);
         }
 

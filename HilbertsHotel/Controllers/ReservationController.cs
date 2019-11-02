@@ -28,12 +28,12 @@ namespace HilbertsHotel.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Reservations reservations = db.Reservations.Find(id);
-            if (reservations == null)
+            Reservation reservation = db.Reservations.Find(id);
+            if (reservation == null)
             {
                 return HttpNotFound();
             }
-            return View(reservations);
+            return View(reservation);
         }
 
         // GET: Reservation/Create
@@ -47,16 +47,16 @@ namespace HilbertsHotel.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,FirstName,LastName,EmailAddress,DateOfBirth,CheckIn,CheckOut,CreditCard")] Reservations reservations)
+        public ActionResult Create([Bind(Include = "ID,CheckIn,Checkout,CreditCard,FirstName,LastName,EmailAddress,DateOfBirth")] Reservation reservation)
         {
             if (ModelState.IsValid)
             {
-                db.Reservations.Add(reservations);
+                db.Reservations.Add(reservation);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return View("Success");
             }
 
-            return View(reservations);
+            return View(reservation);
         }
 
         // GET: Reservation/Edit/5
@@ -66,12 +66,12 @@ namespace HilbertsHotel.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Reservations reservations = db.Reservations.Find(id);
-            if (reservations == null)
+            Reservation reservation = db.Reservations.Find(id);
+            if (reservation == null)
             {
                 return HttpNotFound();
             }
-            return View(reservations);
+            return View(reservation);
         }
 
         // POST: Reservation/Edit/5
@@ -79,15 +79,15 @@ namespace HilbertsHotel.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,FirstName,LastName,EmailAddress,DateOfBirth,CheckIn,CheckOut,CreditCard")] Reservations reservations)
+        public ActionResult Edit([Bind(Include = "ID,CheckIn,Checkout,CreditCard,FirstName,LastName,EmailAddress,DateOfBirth")] Reservation reservation)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(reservations).State = EntityState.Modified;
+                db.Entry(reservation).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(reservations);
+            return View(reservation);
         }
 
         // GET: Reservation/Delete/5
@@ -97,12 +97,12 @@ namespace HilbertsHotel.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Reservations reservations = db.Reservations.Find(id);
-            if (reservations == null)
+            Reservation reservation = db.Reservations.Find(id);
+            if (reservation == null)
             {
                 return HttpNotFound();
             }
-            return View(reservations);
+            return View(reservation);
         }
 
         // POST: Reservation/Delete/5
@@ -110,8 +110,8 @@ namespace HilbertsHotel.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Reservations reservations = db.Reservations.Find(id);
-            db.Reservations.Remove(reservations);
+            Reservation reservation = db.Reservations.Find(id);
+            db.Reservations.Remove(reservation);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
