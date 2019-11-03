@@ -73,7 +73,6 @@ C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\bin\System.Web.WebPages.
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\bin\Newtonsoft.Json.xml
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\bin\Antlr3.Runtime.pdb
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.initial.resources
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.creditcard.resources
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.User.resources
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.CreditcardToLong.resources
@@ -85,3 +84,5 @@ C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.useraddID.resources
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.reservations.resources
 C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.reservation2.resources
+C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.csprojAssemblyReference.cache
+C:\Users\tanne\source\repos\HilbertsHotel\HilbertsHotel\obj\Debug\HilbertsHotel.Migrations.201910312115067_initial.resources
